@@ -1,2 +1,3 @@
 # Sintegrum-test-task
-Click [here](https://alyonkaradchuk.github.io/sintegrum-task/) to see the demonstration.
+Deployed with Netlify
+Click [here](https://aquamarine-travesseiro-4ee6f0.netlify.app/) to see the demonstration.
