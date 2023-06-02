@@ -1,10 +1,14 @@
-const courseItems = document.querySelectorAll('.program__course-text');
+const courseItems = document.querySelectorAll('.program__course-item');
 
 courseItems.forEach(function(courseItem) {
-  courseItem.addEventListener('click', function() {
-    const courseInfo = this.parentNode.querySelectorAll('.program__course-info');
+  const courseText = courseItem.querySelector('.program__course-text');
+  const courseInfo = courseItem.querySelectorAll('.program__course-info');
+
+  courseText.addEventListener('click', function() {
     courseInfo.forEach(function(info) {
-      info.style.display = 'none';
+      info.style.display = info.style.display === 'none' ? 'block' : 'none';
     });
+
+    courseText.classList.toggle('active');
   });
 });

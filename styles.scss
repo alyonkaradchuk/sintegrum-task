@@ -31,6 +31,20 @@ ul {
   height: 60px;
   padding: 0 50px;
   margin: 0 auto;
+
+  &__phone {
+    margin-left: auto;
+  
+    &-number {
+      display: flex;
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        color: rgb(144, 142, 142);
+      }
+    }
+  }
 }
 
 .logo__image {
@@ -47,6 +61,7 @@ ul {
 
 .nav {
   display: flex;
+  flex-shrink: 1;
 
   &__list {
     display: flex;
@@ -62,6 +77,25 @@ ul {
     color: white;
     text-decoration: none;
     cursor: pointer;
+
+    &-image {
+      padding-left: 3px;
+    }
+
+    &-live {
+      background-color: hsla(0,100%,80%,.2);
+      border-radius: 4px;
+      padding: 4px 8px;
+      height: 24px;
+      font-weight: 700;
+      color: #f44;
+      width: fit-content;
+
+      &:hover {
+        background-color: hsla(0,100%,80%,.4);
+        color: #f44;
+      }
+    }
 
     &:hover {
       color: rgb(144, 142, 142);
@@ -79,41 +113,8 @@ ul {
   }
 }
 
-.live {
-  display: block;
-  background-color: hsla(0,100%,80%,.2);
-  border-radius: 4px;
-  padding: 4px 8px;
-  height: 24px;
-  font-weight: 700;
-  color: #f44;
-  width: fit-content;
-
-  &::after {
-    content: "";
-    background-image: url('./img/radio\ \(1\)\ 1.svg') 50% no-repeat;
-    margin-left: 8px;
-    padding: 2px 9px;
-  }
-
-  &:hover {
-    background-color: hsla(0,100%,80%,.4);
-    color: #f44;
-  }
-}
-
 .main {
   position: relative;
-}
-
-.phone {
-  margin-left: auto;
-
-  &__number {
-    display: flex;
-    color: white;
-    text-decoration: none;
-  }
 }
 
 .banner {
@@ -239,7 +240,7 @@ ul {
       line-height: 29px;
       text-align: center;
       color: #A7A7AC;
-      margin-bottom: 48px;
+      margin: 0 100px 48px;
     }
 
     &__video {
@@ -248,7 +249,26 @@ ul {
       height: 0;
       overflow: hidden;
       border-radius: 16px;
-      margin-bottom: 16px;
+      margin: 48px 170px 16px;
+    }
+
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-self: start;
+      margin-left: 190px;
+      padding-bottom: 81px;
+      position: relative;
+
+      &-image {
+        position: absolute;
+        content: "";
+        top: -54px;
+        left: -52px;
+        height: 82px;
+        width: 36px;
+        background: center/cover no-repeat url('https://i.gstatvb.com/ec7fbb70f31f2d41d9cd6ae837d891961685652930.rng.png');
+      }
     }
 
     &__text {
@@ -258,10 +278,7 @@ ul {
       font-weight: 400;
       font-size: 18px;
       line-height: 23px;
-
-      &-image {
-        position: absolute;
-      }
+      margin: 0;
     }
 }
 
@@ -399,8 +416,8 @@ ul {
         transition: .3s;
       }
 
-      &:focus::after,
-      &:active::after {
+      &:active::after,
+      &:checked:after {
         transform: scaleY(-1);
       }
     }
@@ -433,8 +450,12 @@ ul {
   }
 }
 
+.program__course-text.active::after {
+  transform: scaleY(-1);
+}
+
 .team {
-  
+
   &__title {
     text-align: center;
     font-weight: 700;
@@ -568,6 +589,7 @@ ul {
   &__cards {
     display: flex;
     justify-content: flex-start;
+    // flex-wrap: wrap;
 
     &-item {
       background: #3e3f44;
@@ -651,7 +673,6 @@ ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      z-index: 1;
     }
 
     &-btn2 {
@@ -669,7 +690,6 @@ ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      z-index: 1;
     }
   }
 }

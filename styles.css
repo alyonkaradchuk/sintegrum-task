@@ -31,6 +31,17 @@ ul {
   padding: 0 50px;
   margin: 0 auto;
 }
+.header__phone {
+  margin-left: auto;
+}
+.header__phone-number {
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+.header__phone-number:hover {
+  color: rgb(144, 142, 142);
+}
 
 .logo__image {
   width: 71px;
@@ -46,6 +57,7 @@ ul {
 
 .nav {
   display: flex;
+  flex-shrink: 1;
 }
 .nav__list {
   display: flex;
@@ -61,6 +73,23 @@ ul {
   text-decoration: none;
   cursor: pointer;
 }
+.nav__link-image {
+  padding-left: 3px;
+}
+.nav__link-live {
+  background-color: hsla(0, 100%, 80%, 0.2);
+  border-radius: 4px;
+  padding: 4px 8px;
+  height: 24px;
+  font-weight: 700;
+  color: #f44;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.nav__link-live:hover {
+  background-color: hsla(0, 100%, 80%, 0.4);
+  color: #f44;
+}
 .nav__link:hover {
   color: rgb(144, 142, 142);
 }
@@ -73,39 +102,8 @@ ul {
     display: none;
   }
 }
-.live {
-  display: block;
-  background-color: hsla(0, 100%, 80%, 0.2);
-  border-radius: 4px;
-  padding: 4px 8px;
-  height: 24px;
-  font-weight: 700;
-  color: #f44;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.live::after {
-  content: "";
-  background-image: url("./img/radio (1) 1.svg") 50% no-repeat;
-  margin-left: 8px;
-  padding: 2px 9px;
-}
-.live:hover {
-  background-color: hsla(0, 100%, 80%, 0.4);
-  color: #f44;
-}
-
 .main {
   position: relative;
-}
-
-.phone {
-  margin-left: auto;
-}
-.phone__number {
-  display: flex;
-  color: white;
-  text-decoration: none;
 }
 
 .banner {
@@ -205,7 +203,7 @@ ul {
   line-height: 29px;
   text-align: center;
   color: #A7A7AC;
-  margin-bottom: 48px;
+  margin: 0 100px 48px;
 }
 .about-course__video {
   position: relative;
@@ -213,7 +211,24 @@ ul {
   height: 0;
   overflow: hidden;
   border-radius: 16px;
-  margin-bottom: 16px;
+  margin: 48px 170px 16px;
+}
+.about-course__container {
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  margin-left: 190px;
+  padding-bottom: 81px;
+  position: relative;
+}
+.about-course__container-image {
+  position: absolute;
+  content: "";
+  top: -54px;
+  left: -52px;
+  height: 82px;
+  width: 36px;
+  background: center/cover no-repeat url("https://i.gstatvb.com/ec7fbb70f31f2d41d9cd6ae837d891961685652930.rng.png");
 }
 .about-course__text {
   position: relative;
@@ -222,9 +237,7 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-}
-.about-course__text-image {
-  position: absolute;
+  margin: 0;
 }
 
 .about-course__video .iframe {
@@ -344,7 +357,7 @@ ul {
   background-size: cover;
   transition: 0.3s;
 }
-.program__course-text:focus::after, .program__course-text:active::after {
+.program__course-text:active::after, .program__course-text:checked:after {
   transform: scaleY(-1);
 }
 .program__course-download {
@@ -371,6 +384,10 @@ ul {
   color: #fff;
   padding: 15px 0;
   border-bottom: 1px solid rgba(221, 224, 235, 0.25);
+}
+
+.program__course-text.active::after {
+  transform: scaleY(-1);
 }
 
 .team__title {
@@ -563,7 +580,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
 }
 .study-cost__cards-btn2 {
   padding: 0px 32px;
@@ -580,5 +596,4 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
 }/*# sourceMappingURL=styles.css.map */
