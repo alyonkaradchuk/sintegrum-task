@@ -24,3 +24,18 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const parallaxContainer = document.querySelector('.parallax-container');
+
+document.addEventListener('mousemove', function(event) {
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
+  const windowWidth = window.innerWidth;
+  const windowHeight = window.innerHeight;
+
+  const parallaxOffsetX = (mouseX / windowWidth - 0.5) * windowWidth * 0.1; // Изменение по горизонтали
+  const parallaxOffsetY = (mouseY / windowHeight - 0.5) * windowHeight * 0.1; // Изменение по вертикали
+
+  parallaxContainer.style.transform = `translate(${parallaxOffsetX}px, ${parallaxOffsetY}px)`;
+});
+

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.cdnfonts.com/css/troubleside");
 * {
@@ -26,7 +27,7 @@ ul {
   align-items: center;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 11;
   height: 60px;
   padding: 0 50px;
   margin: 0 auto;
@@ -57,7 +58,6 @@ ul {
 
 .nav {
   display: flex;
-  flex-shrink: 1;
 }
 .nav__list {
   display: flex;
@@ -108,6 +108,8 @@ ul {
 
 .banner {
   background-color: #000;
+  position: relative;
+  overflow: hidden;
 }
 .banner::before {
   top: 0;
@@ -117,27 +119,47 @@ ul {
   width: 100%;
   height: 40%;
   background: center/contain url("https://i.gstatvb.com/d512053f27018751b8bc7981c3c9a5211685629148.rng.png");
+  z-index: 9;
 }
-.banner::after {
+
+.parallax-container {
+  position: absolute;
   top: 88px;
   right: 30px;
-  content: "";
-  position: absolute;
   width: 100%;
   max-width: 700px;
   max-height: 650px;
   height: 100%;
-  background: right/contain no-repeat url("https://i.gstatvb.com/29d0e31dd599cf7b4565d084f7051c051685631156.rng.png");
+  pointer-events: none; /* Чтобы избежать влияния на события мыши */
+  z-index: 10;
+}
+
+.parallax-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateX(0); /* Изначально смещение равно 0 */
+  transition: transform 0.3s ease-out; /* Добавляем плавный переход */
 }
 
 .container {
   margin: auto;
-  padding: 236px 80px 415px;
+  padding: 170px 80px 415px;
   min-height: 383px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+}
+.container__image {
+  position: absolute;
+  top: -250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: -moz-max-content;
+  height: max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 .container::before {
   content: "";
@@ -470,8 +492,8 @@ ul {
 .swiper-slide img {
   display: block;
   width: 100%;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 @media (min-width: 600px) {
@@ -611,6 +633,10 @@ ul {
   justify-content: center;
   align-items: center;
 }
+.study-cost__cards-btn1:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
 .study-cost__cards-btn2 {
   padding: 0px 32px;
   gap: 10px;
@@ -626,4 +652,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.study-cost__cards-btn2:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }/*# sourceMappingURL=styles.css.map */
