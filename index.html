@@ -8,16 +8,11 @@
   <link rel="stylesheet" href="./styles.css">
   <script src="./main.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-
-  <!-- Demo styles -->
 </head>
 <body>
     <header class="header">
-      
       <a href="#home" class="logo">
         <img
           src="./img/Group 22493.svg"
@@ -25,22 +20,17 @@
           class="logo__image"
         >
       </a>
-
       <nav class="nav">
         <ul class="nav__list nav__list_mobile">
           <li class="nav__element">
             <div class="nav__link">Очное обучение ∨</div>
-            <!-- <img class="nav__link-image" src="./img/Vector down.svg"> -->
           </li>
-
           <li class="nav__element">
             <a href="#online" class="nav__link">Online-обучение</a>
           </li>
-
           <li class="nav__element">
             <a href="#projects" class="nav__link">Наши проекты ∨</a>
           </li>
-
           <li class="nav__element">
             <a
               href="#ocasions"
@@ -49,15 +39,12 @@
             Мероприятия
             </a>
           </li>
-
           <li class="nav__element">
             <a href="#about" class="nav__link">Об Академии ∨</a>
           </li>
-
           <li class="nav__element">
             <a href="#contacts" class="nav__link">Контакты</a>
           </li>
-
           <li class="nav__element">
             <a href="#photo" class="nav__link">
               <div class="nav__link nav__link-live">
@@ -78,33 +65,37 @@
     </header>
     <main class="main">
       <section class="banner">
-        <div class="parallax-container">
-          <img src="https://i.gstatvb.com/29d0e31dd599cf7b4565d084f7051c051685631156.rng.png" alt="Parallax Image" class="parallax-image">
-        </div>
-        <div class="container">
-          <h1 class="container__title">
-            Компьютерная графика и дизайн
-          </h1>
-          <div>
-            <img class="container__image" src="https://i.gstatvb.com/69c23acd1d6a6fd21a5d75073ea13bc11685644672.rng.png" alt="Image">
+        <div class="banner__container">
+          <div class="banner__wrapper">
+            <div class="parallax-container">
+              <img src="https://i.gstatvb.com/29d0e31dd599cf7b4565d084f7051c051685631156.rng.png" alt="Parallax Image" class="parallax-image">
+            </div>
+            <div class="container">
+              <h1 class="container__title">
+                Компьютерная графика и дизайн
+              </h1>
+              <div>
+                <img class="container__image" src="https://i.gstatvb.com/69c23acd1d6a6fd21a5d75073ea13bc11685644672.rng.png" alt="Image">
+              </div>
+              <h2 class="container__subtitle">Научим зарабативать на своем творчестве</h2>
+              <button class="container__button">Записаться на курс</button>
+            </div>
           </div>
-          <h2 class="container__subtitle">Научим зарабативать на своем творчестве</h2>
-          <button class="container__button">Записаться на курс</button>
-        </div>
-        <div class="about-course about-course__wrap">
-          <h2 class="about-course__title">Коротко о курсе</h2>
-          <div class="about-course__content">Если вы ищете творческую современную профессию тогда этот курс для вас. Мы научим вас как создавать сайты и мобильные приложение, работать с видео и анимацией, рисовать иллюстрации. Вы научитесь работать в 3D: создавать персонажей, игровые локации, интерьеры та экстерьеры. Мы поможем освоить все необходимые инструменты с нуля.</div>
-          <div class="about-course__video">
-            <iframe 
-              class="iframe"
-              src="https://www.youtube.com/embed/ohdhI-e2ogU?autoplay=1"
-              frameborder="0"
-              allowfullscreen="allowfullscreen">
-            </iframe>
-          </div>
-          <div class="about-course__container">
-            <div class="about-course__container-image"></div>
-            <p class="about-course__text">Узнайте как проходит обучение</p>
+          <div class="about-course about-course__wrap">
+            <h2 class="about-course__title">Коротко о курсе</h2>
+            <div class="about-course__content">Если вы ищете творческую современную профессию тогда этот курс для вас. Мы научим вас как создавать сайты и мобильные приложение, работать с видео и анимацией, рисовать иллюстрации. Вы научитесь работать в 3D: создавать персонажей, игровые локации, интерьеры та экстерьеры. Мы поможем освоить все необходимые инструменты с нуля.</div>
+            <div class="about-course__video">
+              <iframe 
+                class="iframe"
+                src="https://www.youtube.com/embed/ohdhI-e2ogU?autoplay=1"
+                frameborder="0"
+                allowfullscreen="allowfullscreen">
+              </iframe>
+            </div>
+            <div class="about-course__container">
+              <div class="about-course__container-image"></div>
+              <p class="about-course__text">Узнайте как проходит обучение</p>
+            </div>
           </div>
         </div>
       </section>
@@ -117,42 +108,42 @@
           <div class="study__wrap-content">
             <div class="study__wrap-item">
               <div>
-                <div class="study__wrap-icon1"></div>
+                <div class="study__wrap-icon study__wrap-icon1"></div>
                 <h3 class="study__wrap-text">Комфортные аудитории</h3>
               </div>
               <p class="study__wrap-info">У нас много комфортных аудиторий, конференс залов и лабораторий. У вас будете лычное рабочее место с персональным компьютером.</p>
             </div>
             <div class="study__wrap-item">
               <div>
-                <div class="study__wrap-icon2"></div>
+                <div class="study__wrap-icon study__wrap-icon2"></div>
                 <h3 class="study__wrap-text">Современое оборудование</h3>
               </div>
               <p class="study__wrap-info">Наши партнеры: Cisko, Microsoft, Avtodesk, мировые лидеры в сфере IT. У вас будет все необходимое оборудование и софт.</p>
             </div>
             <div class="study__wrap-item">
               <div>
-                <div class="study__wrap-icon3"></div>
+                <div class="study__wrap-icon study__wrap-icon3"></div>
                 <h3 class="study__wrap-text">Робота с преподавателями</h3>
               </div>
               <p class="study__wrap-info">Наши преподаватели практикующие дизайнеры. На каждом занятие Вы вместе будете разбирать темы, выполнять задания, разбирать реальные кейсы и проекты.</p>
             </div>
             <div class="study__wrap-item">
               <div>
-                <div class="study__wrap-icon4"></div>
+                <div class="study__wrap-icon study__wrap-icon4"></div>
                 <h3 class="study__wrap-text">Лекции, вебинары и воркшопы</h3>
               </div>
               <p class="study__wrap-info">Мы часто приглашаем известных экспертов из индустрии которые делаться полезными знаниями и секретами своей работы.</p>
             </div>
             <div class="study__wrap-item">
               <div>
-                <div class="study__wrap-icon5"></div>
+                <div class="study__wrap-icon study__wrap-icon5"></div>
                 <h3 class="study__wrap-text">Робота с реальними проектами</h3>
               </div>
               <p class="study__wrap-info">У вас будет возможность разобраться и поработать над реальными проектами еще на этапе обучения.</p>
             </div>
             <div class="study__wrap-item">
               <div >
-                <div class="study__wrap-icon6"></div>
+                <div class="study__wrap-icon study__wrap-icon6"></div>
                 <h3 class="study__wrap-text">Формирование портфолио</h3>
               </div>
               <p class="study__wrap-info">За период обучение вы соберёте свое портфолио из выполненных заданий, курсовых и дипломных проектов.</p>
@@ -210,13 +201,6 @@
           <div class="team__image"></div>
           <div class="team__image"></div>
         </div>
-        <!-- <div class="team__container-phone">
-          <div class="slider">
-            <div class="slider__container">
-              <div class="slider__container-slide"></div>
-            </div>
-          </div>
-        </div> -->
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -246,21 +230,25 @@
           <div class="study-cost__card">
             <h3 class="study-cost__card-title">Стационар</h3>
             <div class="study-cost__info">
-              <div class="study-cost__info-item">
-                <div class="study-cost__info-top">Длительность курса:</div>
-                <div class="study-cost__info-bottom">5 семестров - 2,5 года</div>
+              <div class="study-cost__container">
+                <div class="study-cost__info-item">
+                  <div class="study-cost__info-top">Длительность курса:</div>
+                  <div class="study-cost__info-bottom">5 семестров - 2,5 года</div>
+                </div>
+                <div class="study-cost__info-item">
+                  <div class="study-cost__info-top">График:</div>
+                  <div class="study-cost__info-bottom">3 раза в неделю по 2 пары</div>
+                </div>
               </div>
-              <div class="study-cost__info-item">
-                <div class="study-cost__info-top">График: :</div>
-                <div class="study-cost__info-bottom">3 раза в неделю по 2 пары</div>
-              </div>
-              <div class="study-cost__info-item">
-                <div class="study-cost__info-top">Возраст:</div>
-                <div class="study-cost__info-bottom">9 - 55 лет</div>
-              </div>
-              <div class="study-cost__info-item">
-                <div class="study-cost__info-top">Язык курса:</div>
-                <div class="study-cost__info-bottom">Украинский</div>
+              <div class="study-cost__container">
+                <div class="study-cost__info-item">
+                  <div class="study-cost__info-top">Возраст:</div>
+                  <div class="study-cost__info-bottom">9 - 55 лет</div>
+                </div>
+                <div class="study-cost__info-item">
+                  <div class="study-cost__info-top">Язык курса:</div>
+                  <div class="study-cost__info-bottom">Украинский</div>
+                </div>
               </div>
             </div>
             <div class="study-cost__cards">
@@ -271,7 +259,7 @@
                   <span class="study-cost__cards-currency"> грн/мес</span>
                 </div>
               </div>
-              <div class="study-cost__cards-item2">
+              <div class="study-cost__cards-item">
                 <p class="study-cost__cards-top">Полная оплата</p>
                 <div class="study-cost__cards-cost">
                   <span class="study-cost__cards-amount">3053</span>
@@ -280,29 +268,33 @@
                 <div class="study-cost__cards-text">При оплате за полный курс: 91 575 грн </div>
               </div>
               <div class="study-cost__cards-buttons">
-                <a class="study-cost__cards-btn1" href="">Оставить заявку</a>
-                <a class="study-cost__cards-btn2" href="https://kiev.itstep.org/contract?studyFormId=30022">Заключить договор</a>
+                <a class="study-cost__cards_btn" href="">Оставить заявку</a>
+                <a class="study-cost__cards_btn study-cost__cards_btn-violet" href="https://kiev.itstep.org/contract?studyFormId=30022">Заключить договор</a>
               </div>
             </div>
           </div>
           <div class="study-cost__card">
             <h3 class="study-cost__card-title">Полустационар</h3>
             <div class="study-cost__info">
-              <div class="study-cost__info-item">
-                <div class="study-cost__info-top">Длительность курса:</div>
-                <div class="study-cost__info-bottom">5 семестров - 2,5 года</div>
+              <div class="study-cost__container">
+                <div class="study-cost__info-item">
+                  <div class="study-cost__info-top">Длительность курса:</div>
+                  <div class="study-cost__info-bottom">5 семестров - 2,5 года</div>
+                </div>
+                <div class="study-cost__info-item">
+                  <div class="study-cost__info-top">График:</div>
+                  <div class="study-cost__info-bottom">3 раза в неделю по 2 пары</div>
+                </div>
               </div>
-              <div class="study-cost__info-item">
-                <div class="study-cost__info-top">График: :</div>
-                <div class="study-cost__info-bottom">3 раза в неделю по 2 пары</div>
-              </div>
-              <div class="study-cost__info-item">
-                <div class="study-cost__info-top">Возраст:</div>
-                <div class="study-cost__info-bottom">9 - 55 лет</div>
-              </div>
-              <div class="study-cost__info-item">
-                <div class="study-cost__info-top">Язык курса:</div>
-                <div class="study-cost__info-bottom">Украинский</div>
+              <div class="study-cost__container">
+                <div class="study-cost__info-item">
+                  <div class="study-cost__info-top">Возраст:</div>
+                  <div class="study-cost__info-bottom">9 - 55 лет</div>
+                </div>
+                <div class="study-cost__info-item">
+                  <div class="study-cost__info-top">Язык курса:</div>
+                  <div class="study-cost__info-bottom">Украинский</div>
+                </div>
               </div>
             </div>
             <div class="study-cost__cards">
@@ -313,7 +305,7 @@
                   <span class="study-cost__cards-currency"> грн/мес</span>
                 </div>
               </div>
-              <div class="study-cost__cards-item2">
+              <div class="study-cost__cards-item">
                 <p class="study-cost__cards-top">Полная оплата</p>
                 <div class="study-cost__cards-cost">
                   <span class="study-cost__cards-amount">3053</span>
@@ -322,8 +314,8 @@
                 <div class="study-cost__cards-text">При оплате за полный курс: 91 575 грн </div>
               </div>
               <div class="study-cost__cards-buttons">
-                <a class="study-cost__cards-btn1" href="">Оставить заявку</a>
-                <a class="study-cost__cards-btn2" href="https://kiev.itstep.org/contract?studyFormId=30022">Заключить договор</a>
+                <a class="study-cost__cards_btn" href="">Оставить заявку</a>
+                <a class="study-cost__cards_btn study-cost__cards_btn-violet" href="https://kiev.itstep.org/contract?studyFormId=30022">Заключить договор</a>
               </div>
             </div>
           </div>
